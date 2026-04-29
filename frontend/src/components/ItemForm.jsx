@@ -8,7 +8,7 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
       price: "",
       description: "",
       imageUrl: "",
-      code: "",
+      materialType: "",
     }
   );
 
@@ -44,11 +44,11 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
         required
       />
 
-      <label>Code</label>
+      <label>Material Type</label>
       <input
-        type="number"
-        name="code"
-        value={formData.code}
+        type="text"
+        name="materialType"
+        value={formData.materialType}
         onChange={handleChange}
         required
       />
